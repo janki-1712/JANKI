@@ -1,0 +1,65 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #1a1a00;
+    font-family: cursive77;
+}
+.container
+{
+    width: 1290px;
+    margin: 100px auto 0;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+.container .box
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #1a1a00;
+    margin: 50px;
+    box-sizing: border-box;
+    display: inline-block;
+    
+}
+.container .box .imgBox
+{
+ position: relative;
+
+}
+.container .box .imgBox img
+{
+    max-width: 100%;
+    transition: transform 3s;
+}
+.container .box:hover .imgBox img
+{
+    transform: scale(1.1);
+}
+.container .box .details
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right:20px;
+    background:rgba(192,192,192,0.3);
+    transform: scaleY(0);
+    transition: transform .5s;
+    
+}
+.container .box .details
+{
+    transform: scaleY(1);
+}
+.container .box .details .reference
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: centre;
+    padding: 15px;
+    color: currentColor;
+}
